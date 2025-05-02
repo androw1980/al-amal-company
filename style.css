@@ -1,0 +1,123 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  direction: rtl;
+  text-align: right;
+
+}
+
+
+
+/* الهيدر والنافبار */
+.navbar {
+  background-color: #004e64;
+}
+.navbar .nav-link {
+  color: white;
+}
+.navbar .nav-link:hover {
+  color: orange;
+}
+/* Edit */
+.navbar-brand
+{
+  color: white !important;
+  font-weight: bold;
+}
+/*end Edit */
+
+/*addation*/
+.intro
+{
+  padding: 2% 10%;
+  font-size: xx-large;
+}
+
+/* الهيرو */
+#home {
+  background: url('image/1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* وصف الشركة */
+.container-fluid.p-3.text-bg-info {
+  background-color: #007bff !important;
+  color: white;
+}
+
+/* الخدمات */
+.service-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #e7f3f1;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.service-item:hover {
+  transform: scale(1.03);
+}
+.service-item img {
+  border-radius: 12px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* زر الطلب */
+.btnkl {
+  margin-top: 20px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btnkl:hover {
+  background-color: #fff;
+  color: orange;
+  border: 1px solid orange;
+}
+
+/* التواصل */
+form {
+  padding: 30px;
+  background-color: white;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* الفوتر */
+.footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+@media (max-width: 768px) {
+  .service-item {
+    margin-bottom: 20px;
+  }
+  .btnkl {
+    width: 100%;
+    margin-right: 0;
+  }
+  form {
+    width: 90%;
+  }
+}
