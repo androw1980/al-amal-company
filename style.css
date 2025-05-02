@@ -227,3 +227,84 @@ form {
   z-index: 1;
   position: relative;
 }
+.social-left {
+  position: fixed;
+  bottom: 10px; /* المسافة من الأسفل */
+  left: 10px; /* المسافة من اليسار */
+  z-index: 1000; /* لضمان الظهور فوق العناصر الأخرى */
+}
+
+.social-left .social-icon {
+  position: relative; /* لضبط العناصر الداخلية مثل الشعار */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: #25d366; /* لون الواتساب */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* الشعار الأحمر أو الرقم على الواتساب */
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* أيقونة الهاتف على اليمين */
+.social-right {
+  position: fixed;
+  bottom: 10px; /* المسافة من الأسفل */
+  right: 10px; /* المسافة من اليمين */
+  z-index: 1000; /* لضمان الظهور فوق العناصر الأخرى */
+  display: flex; /* لتوضيع الأيقونة والنص بجانب بعض */
+  align-items: center;
+  gap: 8px; /* مسافة بين الأيقونة والنص */
+}
+
+/* تصميم الأيقونة */
+.social-right .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: #007bff; /* لون الهاتف */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* النص بجانب الأيقونة */
+.call-label {
+  font-size: 16px; /* حجم النص */
+  font-weight: bold; /* خط عريض */
+  color: #0b0b0b; /* لون النص */
+  background-color: #fff; /* الخلفية البيضاء */
+  padding: 5px 10px; /* الحشو حول النص */
+  border-radius: 12px; /* زاوية حادة للنص */
+  border: 1px solid #ccc; /* خط خفيف حول النص */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+  font-family: 'Arial', sans-serif; /* الخط */
+  margin-left: 10px; /* المسافة بين النص والأيقونة */
+}
