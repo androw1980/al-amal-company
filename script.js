@@ -3,7 +3,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
     alert('تم إرسال الرسالة بنجاح!');
   });
   function call() {
-    window.location.href = "tel:+966533367491"; // استبدل الرقم برقمك
+    window.location.href = "tel:++9660567414217"; // استبدل الرقم برقمك
   }
   function sendToWhatsApp() {
     const name = document.getElementById("name").value;
@@ -12,7 +12,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
     const message = document.getElementById("message").value;
 
     const whatsappMsg = `الاسم: ${name}%0Aرقم الهاتف: ${phone}%0Aالبريد: ${email}%0Aالرسالة: ${message}`;
-    const whatsappNumber = "966533367491";
+    const whatsappNumber = "9660567414217";
 
     window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMsg}`, "_blank");
   }
